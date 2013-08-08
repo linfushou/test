@@ -1,0 +1,20 @@
+github是代码托管网站
+
+linux下操作方法：
+1、生成key，拷贝到github网站账户中
+http://www.linuxidc.com/Linux/2011-04/35036.htm
+step1.生成密钥对，这样项目可以push到 GitHub上
+#ssh-keygen -t rsa -C "xxx@gmail.com"
+step2.将.ssh/id_rsa.pub拷贝到GitHub网站
+
+2、github中创建目录，如username/test
+
+3、linux中clone个github的文件目录
+如git clone git@github.com:linfushou/test.git
+
+4、增加修订更新
+# vi README
+自动commit更改文件
+# git commit -a     
+更新至远程
+# git push origin master
